@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@9)!ob0^58(oc%hob6)&pke*%8s8zcgffbam245m2_z^fz+^(c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -154,7 +154,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^https?://localhost(:\d+)?$",  # Matches http://localhost:port veya https://localhost:port
-
 ]
 
 CORS_ALLOWED_CREDENTIALS = True
