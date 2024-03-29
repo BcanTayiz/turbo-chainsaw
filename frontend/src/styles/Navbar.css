@@ -1,0 +1,73 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9de8e; /* Yellow background */
+    color: white; /* Text color */
+    border-radius: 20px;
+}
+
+/* Container within the navbar */
+.navbar .container {
+    background-color: #e1faff; /* Light blue background */
+    border-radius: 30px;
+    box-shadow: 1px 2px 1px 2px white; /* White box shadow */
+}
+
+/* Navbar brand (logo or title) */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Navbar navigation links */
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Individual navigation items */
+.nav-item {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: large;
+    align-self: start;
+    background-color: #b6b6b6; /* Gray background */
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.nav-item:hover {
+    background-color: #ffffff; /* White background on hover */
+}
+
+/* Navbar link styles */
+.navbar-link {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    text-underline-offset: unset; /* Reset underline offset */
+    padding: 8px 16px; /* Padding for better clickable area */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navbar-link:hover {
+    color: lightblue; /* Change text color on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: stretch; /* Stretch items to fill the container */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 10px; /* Reduce gap between items */
+    }
+
+    .navbar-brand {
+        margin-bottom: 20px; /* Add space below the brand */
+    }
+}

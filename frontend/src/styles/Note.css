@@ -1,0 +1,119 @@
+.note-container {
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: min-content;
+  }
+
+.content-container{
+    display: inline;
+    padding: 20px;
+    background-color: #e6e6e6;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 30px;
+}
+  
+  .note-title {
+    color: #333;
+  }
+  
+  .note-content {
+    color: #666;
+  }
+  
+  .note-date {
+    color: #999;
+    font-size: 0.8rem;
+  }
+  
+  .delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #d32f2f; /* Darker red */
+  }
+
+  .update-container{
+    background-color: #959595;
+    width: 200px;
+    box-shadow: #666;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .updated-values{
+    text-align: center;
+  }
+
+  .update-button {
+    background-color: #858057; /* Red */
+    color: white;
+    border: none;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .update-button:hover {
+    background-color: #f0e510; /* Darker red */
+  }
+
+
+  .update-container label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .update-container input,
+  .update-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .update-container input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .update-container input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+
+  .note-container.completed{
+    opacity: 0.5;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: min-content;
+  }
+
+  
+  

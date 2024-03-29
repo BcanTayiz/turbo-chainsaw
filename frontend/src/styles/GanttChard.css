@@ -1,0 +1,90 @@
+.gantt-chart {
+    position: relative;
+
+    height: 90%; /* Gantt şemasının yüksekliği */
+    border: 1px solid #ccc;
+    width: 60vw;
+    margin: auto;
+  }
+
+  .total-bar{
+    position: absolute;
+    background-color: #000000;
+    border-radius: 5px;
+    height: 40px;
+    width: 20px;
+    padding: 0px;
+  }
+
+  .total-bar:hover .tooltip{
+    display: block;
+  }
+  
+  .task-bar {
+    position: absolute;
+    margin-top: 20px;
+    padding: 0;
+    transform: translateY(-50%);
+    height: 40px; /* Görev çubuğunun yüksekliği */
+    background-color: #007bff; /* Görev çubuğunun arka plan rengi */
+    border-radius: 5px;
+  }
+  
+  .task-bar:hover .tooltip {
+    display: block; /* Hover durumunda tooltip'in görünürlüğünü aç */
+  }
+
+  .task-bar:hover .tooltip_index {
+    display: block; /* Hover durumunda tooltip'in görünürlüğünü aç */
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    display: none; /* Başlangıçta gizli tut */
+    text-align: center;
+    justify-content: center;
+  }
+
+  .tooltip_index{
+    position: absolute;
+    top: -30px;
+    left: -100px;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    display: none; /* Başlangıçta gizli tut */
+  }
+
+  .completed{
+    padding: 2px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .app {
+    padding: 20px;
+  }
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .gantt-chart {
+        position: absolute;
+        left: 40px;
+        width: 60%; /* Set width to full viewport width */
+        height: 90%; /* Set height to full viewport height */
+    }    
+}
+
+
+  
